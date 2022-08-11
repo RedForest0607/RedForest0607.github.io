@@ -20,7 +20,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 개발자 꿈나무                     # the main title
+title: RedForest                  # the main title
 
 tagline: 백엔드 개발자를 희망하는 중!   # it will display as the sub-title
 

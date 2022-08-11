@@ -1,5 +1,4 @@
 ---
----
 title: JAVA의 Thread
 author: InGyuJang
 date: 2022-07-08 19:48:20 +0900
@@ -7,11 +6,12 @@ categories: [Tech, JAVA]
 tags: [JAVA, TIL]
 pin: false
 ---
-# 자바의 Thread
-
+# 자바의 Thread  
+![image](https://media.giphy.com/media/Kc1tJDZ3Q4d2pfalIG/giphy.gif)
+  
 ### Thread
 
-프로세스는 프로그램의 실행 단위로, 프로세스를 다중으로 실행하게 되면 그 크기가 크고, 메모리 공유에 있어서 단점이 존재하기 때문에, Thread를 통해서 프로그램을 실행하는 것이 프로세스보다 자원을 덜 소모하면서도 효율적으로 멀티 태스킹이 가능하게 된다.
+프로세스는 프로그램의 실행 단위로, 프로세스를 다중으로 실행하게. 되면 그 크기가 크고, 메모리 공유에 있어서 단점이 존재하기 때문에, Thread를 통해서 프로그램을 실행하는 것이 프로세스보다 자원을 덜 소모하면서도 효율적으로 멀티 태스킹이 가능하게 된다.
 
 ### Runnable vs Thread
 

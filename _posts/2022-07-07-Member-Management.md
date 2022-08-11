@@ -1,5 +1,5 @@
 ---
-title: JAVA의 Thread
+title: 회원관리 예제
 author: InGyuJang
 date: 2022-07-07 12:44:00 +0900
 categories: [Tech, JAVA, Spring]

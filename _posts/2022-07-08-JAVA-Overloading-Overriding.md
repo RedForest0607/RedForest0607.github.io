@@ -6,7 +6,7 @@ categories: [Tech, JAVA]
 tags: [JAVA, TIL]
 pin: false
 ---
-오버로딩에는 메서드 오버로딩과 생성자 오버로딩이 있다.  
+![image](https://media.giphy.com/media/3orif6Wa5KxuRcJU1G/giphy.gif)
   
 ## 오버로딩  
 ---
@@ -39,8 +39,10 @@ public cass OverTest{
 }
 ```
 
-오버로딩은 다음과 같이 car()이라는 같은 이름의 메소드에 대해서 다른 파라미터를 받아서 실행되는 형식으로 작동한다.  
-  
+오버로딩은 다음과 같이 car()이라는 같은 이름의 메소드에 대해서 다른 파라미터를 받아서 실행되는 형식으로 작동한다.   
+
+오버로딩에는 메서드 오버로딩과 생성자 오버로딩이 있다.  
+
 ## 오버라이딩
 ---
 

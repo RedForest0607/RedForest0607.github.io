@@ -6,13 +6,14 @@ categories: [Blogging, Chat]
 tags: [Blog, Github, Issues]
 pin: false
 ---
+  
 ![image](https://velog.velcdn.com/images/a87380/post/cc31493a-1290-4870-b332-b00152291854/image.png)
-###
+  
 깃허브 블로그 테마를 jekyll-theme-chirpy로 바꾸면서 다음과 같은 에러가 계속해서 발생했다.
-내가 변경하려는 테마는 기본적으로 CI/CD가 설정되어 있어서 블로그 설정이 제대로 되어 있지 않다면 동작하지 않는다는 것을 알았다.
-###
+내가 변경하려는 테마는 기본적으로 CI/CD가 설정되어 있어서 블로그 설정이 제대로 되어 있지 않다면 동작하지 않는다는 것을 알았다.  
+  
 ![image](https://velog.velcdn.com/images/redforest/post/d456169b-e2d9-4151-9ea6-75f9fecd8550/image.png)
-###
+  
 다음과 같이 커밋되는 코드를 검토하여서, 해당하는 코드가 문제가 없을때만 gh-pages라는 브랜치로 푸쉬되어서 실제 페이지에 반영된다.
 이러한 과정이 반영되지 않아서 테마가 적용되지 않고 index.html의 내용이 날것 그대로 보여지는 것이었다.
 

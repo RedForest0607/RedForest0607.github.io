@@ -1,11 +1,10 @@
 ---
-layout: post
-title: Team PeachTri 출범!
+title: [PeachTri]Team PeachTri 출범!
+author: InGyuJang
 date: 2022-05-06 18:57:00 +0900
-description: Team PeachTri 출범! # Add post description (optional)
-published: true
-img : blogbanner.png
+categories: [Blogging, PeachTri]
 tags: [Begin, Blog, Chat, PeachTri]
+pin: false
 ---
 
 ![](https://velog.velcdn.com/images/redforest/post/79add184-c6d2-4425-843a-6906d192544e/image.png)

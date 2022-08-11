@@ -1,11 +1,10 @@
 ---
-layout: post
-title: PeachTri 네번째 세미나 - 가비지 컬렉션
+title: [PeachTri] 네번째 세미나 - 가비지 컬렉션
 date: 2022-06-14 12:02:00 +0900
-description: PeachTri 네번째 세미나 # Add post description (optional)
-published: true
+categories: [Blogging, PeachTri, Seminar]
 img : Seminar_banner_small.png
 tags: [세미나, PeachTri]
+pin: false
 ---
 # 가비지 컬렉션  :wastebasket:
 ## 가비지 컬렉션이란? ❓

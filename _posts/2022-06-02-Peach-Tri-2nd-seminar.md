@@ -1,11 +1,10 @@
 ---
-layout: post
-title: PeachTri 두번째 세미나 - 클린코드
+title: [PeachTri] 두번째 세미나 - 클린코드
 date: 2022-06-03 11:43:00 +0900
-description: PeachTri 두번째 세미나 # Add post description (optional)
-published: true
+categories: [Blogging, PeachTri, Seminar]
 img : Seminar_banner_small.png
 tags: [세미나, PeachTri]
+pin: false
 ---
 # 클린코드 🧑‍💻
 ### 깨끗한 코드란?

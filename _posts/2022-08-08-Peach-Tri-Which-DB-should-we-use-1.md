@@ -1,11 +1,10 @@
 ---
-layout: post
-title: PeachTri 어떤 DB를 사용해야 할까? - 1
+title: [PeachTri] 어떤 DB를 사용해야 할까? - 1
 date: 2022-08-08 20:05:00 +0900
-description: PeachTri - DB # Add post description (optional)
-published: true
+categories: [Blogging, PeachTri, Iride-Scent]
 img : Seminar_banner_small.png
 tags: [세미나, PeachTri, DB, Iride-Scent]
+pin: false
 ---
 # 어떤 데이터 베이스를 사용할까?
 `Iride-scent`는 현재 내가 속한 토이프로젝트 팀 PeachTri가 현재 기획하고 제작에 들어가려고 하는 향수 추천 어플리케이션이다. 이런 추천 서비스를 위해서는 향수의 노트나 제작에 들어가는 재료와 같은 여러가지 데이터의 입력을 필요로 한다. 그래서 우리 팀은 어떠한 DB가 우리 어플리케이션 특성에 맞춰서 적용할 수 있는 DB인지를 파악해보려고 한다.

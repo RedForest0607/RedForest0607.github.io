@@ -1,5 +1,5 @@
 ---
-title: [Chat]Jekylㅣ테마 오류 수정
+title: ChatJekylㅣ테마 오류 수정
 author: InGyuJang
 date: 2022-08-11 14:54:10 +0900
 categories: [Blogging, Chat]

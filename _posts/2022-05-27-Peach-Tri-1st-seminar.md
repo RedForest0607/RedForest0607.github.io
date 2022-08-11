@@ -1,5 +1,5 @@
 ---
-title: [PeachTri]PeachTri 첫번째 세미나
+title: PeachTri 첫번째 세미나
 author: InGyuJang
 date: 2022-05-27 20:00:00 +0900
 categories: [Blogging, PeachTri, Seminar]

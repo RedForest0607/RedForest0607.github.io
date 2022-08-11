@@ -20,3 +20,7 @@ node_modules
 package-lock.json
 
 Gemfile.lock
+
+.trash/
+.DS_Store
+.obsidian

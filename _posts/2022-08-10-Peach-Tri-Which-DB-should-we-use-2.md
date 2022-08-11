@@ -1,13 +1,13 @@
 ---
-layout: post
 title: PeachTri 어떤 DB를 사용해야 할까? - 2
 date: 2022-08-10 22:02:00 +0900
-description: PeachTri - DB # Add post description (optional)
-published: true
+categories: [Blogging, PeachTri, Iride-Scent]
 img : Seminar_banner_small.png
 tags: [세미나, PeachTri, DB, Iride-Scent]
+pin: false
 ---
 # 사용해야할 DB
+![image](https://media.giphy.com/media/xT9C25UNTwfZuk85WP/giphy-downsized-large.gif)
 ## SQL
  우리는 기본적으로 향수에 대하여 정리하고, 정리된 데이터를 기반으로 향수를 추천하는 어플리케이션을 제작할 예정이다. 이에 따라서 다양한 방식을 살펴볼 수 있는데, 내가 1차적으로 생각하는 것은 SQL형식의 RDB이다.
 ## 왜 RDB인가?
@@ -31,5 +31,5 @@ tags: [세미나, PeachTri, DB, Iride-Scent]
    - MariaDB와 같은 `오픈소스 프로젝트`
    - 멀티 프로세스 방식으로 복잡한 쿼리나 join처리에서 좀 더 뛰어난 성능을 보여준다.
    - 상당히 높은 점유율로 인해서 정보를 찾기 편하다.
-
+![image](https://velog.velcdn.com/images/redforest/post/04241207-1bcc-4e1f-91db-f5c59f267c9e/image.png)
 다음과 같은 RDB들 중에서 PostgreSQL를 추천해볼까 한다. 오픈소스 프로젝트라는 점, 그래서 이용자도 많다는 점, 정보나 업데이트도 빠르기 때문에 우리의 토이프로젝트 적용에도 매우 좋을 것으로 생각이 든다.

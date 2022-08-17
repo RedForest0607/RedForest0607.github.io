@@ -63,7 +63,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'test'
 flush privilages;
 ```
 
-다음과 같은 query를 통해서 `mysql_native_password`를 사용할 수 있따
+다음과 같은 query를 통해서 `mysql_native_password`를 사용할 수 있다.
 
 
 
@@ -81,6 +81,6 @@ flush privilages;
 
   
 
-환경설정은 항상 느끼지만 어렵다. 나의 발목을 잡는다는 느낌이 드는 것도 당연하다고 생각한다.Firebase를 사용한다면 이런 오류를 만나지 않았겠지만, 만나지 안았기 때문에 조금은 더 성정했다는 느낌을 받았다.  
+환경설정은 항상 느끼지만 어렵다. 나의 발목을 잡는다는 느낌이 드는 것도 당연하다고 생각한다.Firebase를 사용한다면 이런 오류를 만나지 않았겠지만, 만나지 않았기 때문에 조금은 더 성장했다는 느낌을 받았다.  
 
 앞으로 DB의 세부 테이블이나 내용은 다음주에 또 다뤄보도록 하겠다.

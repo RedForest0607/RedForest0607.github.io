@@ -1,5 +1,5 @@
 ---
-title: '[PeachTri]PeachTri 어떤 DB를 사용해야 할까? - 1'
+title: '[PeachTri] PeachTri 어떤 DB를 사용해야 할까? - 1'
 date: 2022-08-08 20:05:00 +0900
 categories: [Blogging, PeachTri, Iride-Scent]
 img : Seminar_banner_small.png

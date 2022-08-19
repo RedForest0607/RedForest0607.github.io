@@ -1,5 +1,5 @@
 ---
-title: JAVA의 Thread
+title: '[JAVA] JAVA의 Thread'
 author: InGyuJang
 date: 2022-07-08 19:48:20 +0900
 categories: [Tech, JAVA]

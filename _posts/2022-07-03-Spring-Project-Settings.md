@@ -1,5 +1,5 @@
 ---
-title: Spring 프로젝트 환경설정
+title: '[JAVA] Spring 프로젝트 환경설정'
 author: InGyuJang
 date: 2022-07-03 01:02:00 +0900
 categories: [Tech, JAVA, Spring]

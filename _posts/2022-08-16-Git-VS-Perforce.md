@@ -1,5 +1,5 @@
 ---
-title: Git vs Perforceh 
+title: Git vs Perforce
 author: InGyuJang
 date: 2022-08-16 12:00:00 +0900
 categories: [Tech, Theory]

@@ -1,5 +1,5 @@
 ---
-title: PeachTri GCP와 DB 설정
+title: '[PeachTri]PeachTri GCP와 DB 설정'
 date: 2022-08-11 23:26:00 +0900
 categories: [Blogging, PeachTri, Iride-Scent]
 img : Seminar_banner_small.png

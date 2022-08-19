@@ -1,5 +1,5 @@
 ---
-title: Team PeachTri 출범!
+title: '[PeachTri] Team PeachTri 출범!'
 author: InGyuJang
 date: 2022-05-06 18:57:00 +0900
 categories: [Blogging, PeachTri]

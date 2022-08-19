@@ -1,5 +1,5 @@
 ---
-title: JAVA의 Overloading, Overriding
+title: '[JAVA] JAVA의 Overloading, Overriding'
 author: InGyuJang
 date: 2022-06-20 14:28:50 +0900
 categories: [Tech, JAVA]

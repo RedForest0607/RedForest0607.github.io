@@ -32,13 +32,11 @@ GCP는 다양한 가상머신을 병렬적으로 다뤄야할 상황을 상정�
 ![image](https://user-images.githubusercontent.com/74250270/184181792-45c8f0db-d7cd-472b-baa7-f156bb2ed66a.png)
 
 인그레스와 이그레스에 대한 SQL포트 `3306`에 대해서 모든 ip들(`0.0.0.0/0`)들의 접속을 허용하도록 설정을 잡았다. 해당하는 설정을 통해서 DBeaver와 SQL 클라이언트가 SSH키 없이 접속할 수 있도록 설정을 잡아주었다.
-
-### MYSQL
-
-DB는 MySQL을 사용하기로 했다. PostgreSQL의 조금이라도 존재하는 러닝커브를 피하기 위함이다.(현재 생각중인 Flutter, Spring 모두 공부를 필요로 한다.). 
-
-
-
+  
+#### 리눅스 포트 접근 허용하기
+GCP의 방화벽 설정을 했으면, GCP안에 리눅스에서도 포트접근을 허용해야 한다.
+`sudo iptables -I INPUT -p tcp -m tcp --dport 22 -j ACCEPT`와 `sudo iptables -I OUTPUT -p tcp -m tcp --dport 22 -j ACCEPT`명령어를 통해서 mysql이 사용하는 22번포트의 인풋 아웃풋을 허용하는 규칙을 설정해준다.
+  
 #### Connection refused:connect
 
 `sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf`
@@ -49,7 +47,20 @@ DB는 MySQL을 사용하기로 했다. PostgreSQL의 조금이라도 존재하�
 
 다음과 같은 두 항복이 루프백 주소로 되어 있어서 외부의 접속을 막고 있는데, 이를 주석처리 하거나 완전히 오픈하여서 외부의 다른 IP도 접속할 수 있도록 설정을 잡아줘야한다.
 
+### MYSQL
+
+DB는 MySQL을 사용하기로 했다. PostgreSQL의 조금이라도 존재하는 러닝커브를 피하기 위함이다.(현재 생각중인 Flutter, Spring 모두 공부를 필요로 한다.). 
+
 #### SQL에서도 비밀번호를 통해서 접속하기
+
+#### Connection refused : connect, Public Key Retrieval is not allowed
+
+8.0이상의 DBeaver에서는 주소값과 드라이버이름, 유저아이디, 패스워드만 가지고는 에러가 발생한다.  
+
+![img](https://user-images.githubusercontent.com/74250270/184183509-842266aa-cd11-4c2f-a069-a000f8180f91.png)
+
+드라이버 설정의 AllowPublicKeyRetrival 옵션을 true로 바꾸면 해결할 수 있다.
+다만 이러한 키 방식의 번거로움을 줄이고자 비밀번호를 통하여 유저를 인증하는 `Authentication Plugin`을 사용하기로 했다.
 
 MySQL 8.0부터는 기본적인 authentication plugin이 `caching_sha2_password`이 되면서 RSA key를 필요로 한다. 단, 이러한 key를 이용한 방식이 아닌 단순 암호를 사용하는 방식으로 바꾸기 위해서는 다음과 같은 코드를 사용해야한다.
 
@@ -65,15 +76,6 @@ flush privilages;
 
 다음과 같은 query를 통해서 `mysql_native_password`를 사용할 수 있다.
 
-
-
-#### Connection refused : connect, Public Key Retrieval is not allowed
-
-8.0이상의 DBeaver에서는 주소값과 드라이버이름, 유저아이디, 패스워드만 가지고는 에러가 발생한다.  
-
-![img](https://user-images.githubusercontent.com/74250270/184183509-842266aa-cd11-4c2f-a069-a000f8180f91.png)
-
-드라이버 설정의 AllowPublicKeyRetrival 옵션을 true로 바꿔서 1차적으로 접속하고 다시 false로 바꿔두면 해결이다.
 
 ### 역시 환경설정이 제일 어려운법
 

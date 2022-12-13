@@ -24,3 +24,4 @@ Gemfile.lock
 .trash/
 .DS_Store
 .obsidian
+post_list.txt

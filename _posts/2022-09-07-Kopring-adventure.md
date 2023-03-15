@@ -1,9 +1,9 @@
 ---
-title: "Kotlin + Spring을 사용기"
+title: "[Kotlin]Kotlin + Spring을 사용기"
 author: InGyuJang
 date: 2022-09-07 18:20:20 +0900
-categories: [Blogging, Greetings]
-tags: [세미나, PeachTri]
+categories: [Tech, Kotlin]
+tags: [TIL, Tech, Kotlin]
 pin: false
 ---
 

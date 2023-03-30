@@ -4,7 +4,7 @@ author: InGyuJang
 date: 2022-03-08 10:20:00 +0900
 categories: [Tech, Infrastructure]
 tags: [TIL, Tech, Dart, Flutter]
-pin: true
+pin: false
 ---
 
 ![](https://media.giphy.com/media/jUwpNzg9IcyrK/giphy.gif)  

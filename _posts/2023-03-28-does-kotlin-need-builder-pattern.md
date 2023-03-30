@@ -1,7 +1,7 @@
 ---
 title: "[Kotlin] 코틀린은 빌더 패턴을 필요로 할까?"
 author: InGyuJang
-date: 2022-03-28 13:50:20 +0900
+date: 2023-03-28 13:50:20 +0900
 categories: [ProgrammingLanguage, Kotlin]
 tags: [Kotlin, ProgrammingLanguage, JVM]
 pin: false

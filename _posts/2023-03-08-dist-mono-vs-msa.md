@@ -1,10 +1,10 @@
 ---
 title: "[Server]분산 모놀리식 VS MSA"
 author: InGyuJang
-date: 2022-03-08 10:20:00 +0900
+date: 2023-03-08 10:20:00 +0900
 categories: [Tech, Infrastructure]
 tags: [Tech, Infrastructure, Server, Backend]
-pin: true
+pin: false
 ---
 
 ![](https://media.giphy.com/media/xT5LMW8G3kkpx3MP5K/giphy.gif)

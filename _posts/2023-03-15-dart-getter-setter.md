@@ -1,10 +1,10 @@
 ---
 title: "[Dart]Dart에서 Getter와 Setter"
 author: InGyuJang
-date: 2022-03-08 10:20:00 +0900
+date: 2023-03-08 10:20:00 +0900
 categories: [Tech, Infrastructure]
 tags: [TIL, Tech, Dart, Flutter]
-pin: true
+pin: false
 ---
 
 ![](https://media.giphy.com/media/jUwpNzg9IcyrK/giphy.gif)  

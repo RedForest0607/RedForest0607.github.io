@@ -81,7 +81,38 @@ class Example {
 캡슐화는 정보은닉, 그리고 더 나아가서 `OOP`의 궁극적 목표인 추상화에 도달하기 위해, 그리고 각 클래스에 역할과 책임을 부여하기 위해서 각 객체들이 서로 커뮤니케이션을 위해서 구조를 알아야 하는 것이 아니라, 각 객체들이 서로에게 질문을 던지고 답변을 들으며 커뮤니케이션을 한다고 생각하면 편하다.
 
 # 💁 그렇다면 적절한 Accessor의 사용은 어떤 때 일까?
-Accessor들을 활용하기 가장 적합한 위치는 바로 `추가적인 연산`이나 `데이터에 변동`이 필요한 때이다. getter나 setter를 통해서 값이 바로 들어가는 것이 아니라, 그 중간에 값을 빼온다는지, 데이터에 따라서 따로 가공이 필요한 케이스의 경우에는 이런 getter setter를 통해서 중간다리 역할을 해줄 수 있다. 이런경우는 의심치 않고 getter setter를 활용하는 것이 도움이 될 것이다. 혹은 입력값에 따라서 Data내부에 있는 Type으로 변환하는 경우도 있을 수 있다. Data가 품고 있는 값을 `String`으로 입력된 이름으로 가져오고 싶다던지하는 경우는 getter setter를 활용할 여지가 충분히 존재한다.
+Accessor들을 활용하기 가장 적합한 위치는 바로 `추가적인 연산`이나 `데이터에 변동`이 필요한 때이다. getter나 setter를 통해서 값이 바로 들어가는 것이 아니라, 그 중간에 값을 빼온다는지, 데이터에 따라서 따로 가공이 필요한 케이스의 경우에는 이런 getter setter를 통해서 중간다리 역할을 해줄 수 있다. 이런경우는 의심치 않고 getter setter를 활용하는 것이 도움이 될 것이다. 혹은 입력값에 따라서 Data내부에 있는 Type으로 변환하는 경우도 있을 수 있다. Data가 품고 있는 값을 `String`으로 입력된 이름으로 가져오고 싶다던지하는 경우는 getter setter를 활용할 여지가 충분히 존재한다.  
+
+> 직접적으로 자료형 그대로 가져오려고 하지 말고, 그 데이터를 통해 무엇을 하고 싶은지를 분리해내자  
+
+사실 위와 같은 부분에서도 getter를 사용하기 애매한 부분이 분명히 존재한다. 정말 단순히 (ex: 전화번호 파싱이라던지) 하는 부분이 아니라면, 어떤 일을 할지에 더 중점을 두고 처리하는 것이 바람직 하다.  
+  
+DONT
+```kotlin
+class 서비스 객체 {
+  fun addThisToExampleListClass(example: Example) {
+    exampleListClassInstance.getNames.add(example.name)
+    exampleListClassInstance.getAges.add(example.age)
+  }
+}
+```
+
+DO  
+```kotlin
+class 서비스 객체 {
+  fun addThisToExampleListClass(example: Example) {
+    exampleListClassInstance.addExample(example)
+  }
+}
+
+class ExampleListClass {
+  fun addExample(example: Example) {
+    this.exampleList.put(example)
+  }
+  
+}
+```
+위의 예시가 완성도 높지는 않지만, 예시처럼, 서비스 객체에서 직접 다른 객체를 가져와 내부에 getter setter를 통해서 버무리는 것이 아니라, 객체에 있는 public함수를 통해 어떤 동작을 하도록 `메시지`를 보내고, 해당하는 객체는 요청에 맞는 행동을 하도록 하는 것이 더 바람직한 캡슐화가 된다.
 
 ---
 
